@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive side nav</title>
+    <!-- Bootstrap -->
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Foundation -->
+    <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+    <link rel="stylesheet" href="../assets/foundation/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/foundation/css/foundation.css" />
+    <!-- Main styles -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Modernizr -->
+    <script src="../assets/foundation/js/vendor/custom.modernizr.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span2 side-nav">Main Side Nav</div>
+        <div class="span10 main-body">Main Side Nav</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="small-2 columns orange">Main Side Nav</div>
+      <div class="small-10 columns green">Main Side Nav</div>
+    </div>
+
+    <!-- Jquery scripts -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- Bootstrap scripts -->
+    <script src="..assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- Foundation scripts -->
+    <script>
+    document.write('<script src=' +
+    ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+    '.js><\/script>')
+    </script>
+    <script src="../assets/foundation/js/foundation/foundation.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.alerts.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.clearing.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.cookie.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.dropdown.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.forms.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.joyride.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.magellan.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.orbit.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.placeholder.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.reveal.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.section.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.tooltips.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="../assets/foundation/js/foundation/foundation.interchange.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
