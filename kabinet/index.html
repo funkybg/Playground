@@ -9,30 +9,34 @@
     <link href="../assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <!-- Foundation -->
     <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
-    <link rel="stylesheet" href="../assets/foundation/css/normalize.css" />
-    <link rel="stylesheet" href="../assets/foundation/css/foundation.css" />
+    <!-- <link rel="stylesheet" href="../assets/foundation/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/foundation/css/foundation.css" /> -->
     <!-- Main styles -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- Modernizr -->
     <script src="../assets/foundation/js/vendor/custom.modernizr.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span2 side-nav">Main Side Nav</div>
-        <div class="span10 main-body">Main Side Nav</div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="small-2 columns orange">Main Side Nav</div>
-      <div class="small-10 columns green">Main Side Nav</div>
-    </div>
+        <div class="side-nav">
+            <div class="container main-body">
+                <div class="row main-body">
+                    <div class="col-lg-10 main-body">Main Side Nav</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 main-body">Main Side Nav</div>
+                <a class="btn btn-primary btn-lg">Learn more »</a>
+            </div>
+        </div>
 
     <!-- Jquery scripts -->
     <script src="http://code.jquery.com/jquery.js"></script>
 
     <!-- Bootstrap scripts -->
     <script src="..assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="..assets/bootstrap/js/respond.min.js"></script>
     
     <!-- Foundation scripts -->
     <script>
