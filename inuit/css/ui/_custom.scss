@@ -1,0 +1,25 @@
+$placecolor:red;
+
+@mixin placeborder {
+	border: 1px solid $placecolor;
+}
+
+.color {
+	@include placeborder;
+}
+
+@mixin center-content {
+	max-width: 1200px;
+	margin:0 auto;
+	padding-bottom: 0;
+}
+
+body {
+	@include center-content;
+}
+
+.demo-block{
+    padding:0.5em;
+    background-color:#4a8ec2;
+    color:#fff;
+}

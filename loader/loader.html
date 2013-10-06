@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../assets/pure/pure-min.css">
+    <link rel="stylesheet" href="../assets/nprogress/nprogress.css">
+
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a href="loader2.html">Loader2</a>
+            </li>
+            <li>
+                <a href="loader.html">Loader</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="content" class="pure-g-r">
+        <div class="pure-u-1">
+            <p>asdasd</p>
+            <div id="nprog" class="nprog pure-u-1" style="background-color:green;">nprogress</div>
+            <img src="http://blog.gettyimages.com/wp-content/uploads/2013/01/Siberian-Tiger-Running-Through-Snow-Tom-Brakefield-Getty-Images-200353826-001.jpg" alt="">
+<!--            <img src="http://cdn.arstechnica.net/wp-content/uploads/2012/10/06_Place_20773_1_Mis.jpg" alt="">-->
+<!--            <img src="http://i.dailymail.co.uk/i/pix/2012/11/15/article-0-1609D0FF000005DC-373_964x641.jpg" alt="">-->
+<!--            <img src="http://brandontgj2o.files.wordpress.com/2012/10/ocean-300.jpg" alt="">-->
+        </div>
+    </div>
+    <script src="../assets/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="../assets/nprogress/nprogress.js" type="text/javascript"></script>
+<!--<script src="../assets/pace/pace.js" type="text/javascript"></script>-->
+
+<!-- jQuery ScrollTo Plugin -->
+<script src="../assets/scrollto/lib/jquery-scrollto.js"></script>
+
+<!-- History.js -->
+<script src="../assets/history/scripts/bundled-uncompressed/html4+html5/jquery.history.js"></script>
+
+<!-- Ajaxify -->
+<script src="../assets/ajaxify-master/ajaxify-html5.js"></script>
+    <script>
+    $(document).ready(function(){
+        NProgress.start();
+ });
+        $("img","div").load(function() {
+                NProgress.inc();});
+                
+                            
+        $(window).load(function() {
+        NProgress.done();
+        });
+  </script>
+</body>
+</html>
